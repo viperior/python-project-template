@@ -12,7 +12,7 @@ def test_python_code_quality() -> None:
     standard_output_data = pylint_stdout.read()
     standard_error_data = pylint_stderr.read()
     logging.debug("pylint_stderr = \n%s", standard_error_data)
-    pylint_error_free_search_phrase = "Your code has been rated at 10/10"
+    pylint_error_free_search_phrase = "Your code has been rated at 10.00/10"
     pylint_errors_detected = pylint_error_free_search_phrase not in standard_output_data
 
     if pylint_errors_detected:
