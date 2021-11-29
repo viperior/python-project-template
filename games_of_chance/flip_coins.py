@@ -1,4 +1,4 @@
-"""Example module foo"""
+"""Example module flip_coins"""
 
 import logging
 import random
