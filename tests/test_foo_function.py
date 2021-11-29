@@ -2,7 +2,7 @@
 
 import logging
 
-import foo.foo
+from games_of_chance.flip_coins import flip_coins
 
 
 def test_foo_function() -> None:
@@ -11,7 +11,7 @@ def test_foo_function() -> None:
     Returns:
     None
     """
-    coin_flip_result = foo.foo.flip_coins(coins_to_flip=10, chosen_side="heads")
-    logging.debug(coin_flip_result)
+    coin_flip_result = flip_coins(coins_to_flip=10, chosen_side="heads")
+    logging.debug("coin_flip_result = %s", coin_flip_result)
 
     assert coin_flip_result["result"] in ["won", "lost", "tie"]
