@@ -5,6 +5,6 @@ This is a template for Python projects that includes automated test cases implem
 ## Project structure
 ```
 project_root
-├───foo
+├───games_of_chance
 └───tests
 ```
