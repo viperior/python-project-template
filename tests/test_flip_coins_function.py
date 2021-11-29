@@ -1,6 +1,7 @@
 """Example test case"""
 
 import logging
+import pylint
 
 from games_of_chance.flip_coins import flip_coins
 
