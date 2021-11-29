@@ -7,7 +7,7 @@ from pylint import epylint as lint
 
 def test_python_code_quality() -> None:
     """Run the project's source code through pylint and assert 0 errors should exist"""
-    command_options = "../python-project-template"
+    command_options = "../python-project-template --disable=C0103"
     (pylint_stdout, pylint_stderr) = lint.py_run(command_options=command_options, return_std=True)
     standard_output_data = pylint_stdout.read()
     standard_error_data = pylint_stderr.read()
