@@ -40,8 +40,8 @@ def flip_coins(coins_to_flip: int, chosen_side: str) -> dict:
 
     # Perform the coin flips
     flip_data = [
-        0, # heads
-        0 # tails
+        0,  # heads
+        0   # tails
     ]
     flip_pip_chart = ""
     flip_pip_chart_map = ["H", "T"]
