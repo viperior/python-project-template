@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.5.0](https://github.com/viperior/python-project-template/tree/v0.5.0) (2022-02-25)
+
+### Improvements
+
+* Fail faster when running the `pytest` test suite by running the test suite asynchronously and halting on the first error encountered using pytest's `-x` option (closes [#12][i12])
+* Bump pylint from 2.12.1 to 2.12.2 ([#16][p16])
+* Bump pytest from 6.2.5 to 7.0.1 ([#17][p17])
+
+[i12]: https://github.com/viperior/python-project-template/issues/12
+[p16]: https://github.com/viperior/python-project-template/pull/16
+[p17]: https://github.com/viperior/python-project-template/pull/17
+
 ## [0.4.0](https://github.com/viperior/python-project-template/tree/v0.4.0) (2022-02-25)
 
 ### New features
