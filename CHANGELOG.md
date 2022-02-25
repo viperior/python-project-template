@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.0](https://github.com/viperior/python-project-template/tree/v0.4.0) (2022-02-25)
+
+### New features
+
+* Configure Dependabot to automate the management of the project's dependencies (closes [#10][i10])
+
+[i10]: https://github.com/viperior/python-project-template/issues/10
+
 ## [0.3.0](https://github.com/viperior/python-project-template/tree/v0.3.0) (2022-02-25)
 
 ### New features
