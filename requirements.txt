@@ -6,14 +6,8 @@
 #
 astroid==2.9.0
     # via pylint
-atomicwrites==1.4.0
-    # via pytest
 attrs==21.2.0
     # via pytest
-colorama==0.4.4
-    # via
-    #   pylint
-    #   pytest
 iniconfig==1.1.1
     # via pytest
 isort==5.10.1
@@ -34,16 +28,12 @@ pylint==2.12.1
     # via -r requirements.in
 pyparsing==3.0.6
     # via packaging
-pytest==6.2.5
+pytest==7.0.1
     # via -r requirements.in
 toml==0.10.2
-    # via
-    #   pylint
-    #   pytest
-typing-extensions==4.0.0
-    # via
-    #   astroid
-    #   pylint
+    # via pylint
+tomli==2.0.1
+    # via pytest
 wrapt==1.13.3
     # via astroid
 
