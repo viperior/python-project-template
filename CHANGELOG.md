@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.0](https://github.com/viperior/python-project-template/tree/v0.7.0) (2022-02-25)
+
+### Improvements
+
+* Measure code coverage using `coverage` and require 100% code coverage to pass PR checks ([#9][i9])
+
+[i9]: https://github.com/viperior/python-project-template/issues/9
+
 ## [0.6.0](https://github.com/viperior/python-project-template/tree/v0.6.0) (2022-02-25)
 
 ### Improvements
