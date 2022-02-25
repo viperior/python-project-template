@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.6.0](https://github.com/viperior/python-project-template/tree/v0.6.0) (2022-02-25)
+
+### Improvements
+
+* Enforce Flake8 Rules (closes [#11][i11])
+* Modify max code line length to 100 characters in `flake8` command
+
+[i11]: https://github.com/viperior/python-project-template/issues/11
+
 ## [0.5.0](https://github.com/viperior/python-project-template/tree/v0.5.0) (2022-02-25)
 
 ### Improvements
