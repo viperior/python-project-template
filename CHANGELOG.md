@@ -4,7 +4,12 @@
 
 ### Improvements
 
-* Measure code coverage using `coverage` and require 100% code coverage to pass PR checks ([#9][i9])
+* Measure code coverage using `coverage` and require 100% code coverage to pass PR checks (closes [#9][i9])
+
+### Testing
+
+* Improve the design of the `test_flip_coins_function` to use parametrized test input data and run multiple times with a range of coin count inputs
+* Exclude pylint success/failure reporting from code coverage measurement
 
 [i9]: https://github.com/viperior/python-project-template/issues/9
 
