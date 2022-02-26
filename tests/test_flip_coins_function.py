@@ -7,7 +7,7 @@ import pytest
 from games_of_chance.flip_coins import flip_coins
 
 
-@pytest.mark.parametrize("coin_count", [0, 1, 2, 3, 4, 10, 20])
+@pytest.mark.parametrize("coin_count", list(range(11)) + list(range(10, 200, 10)) + [1, 2] * 30)
 def test_foo_function(coin_count: int) -> None:
     """Example test case
 
