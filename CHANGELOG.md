@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.7.0](https://github.com/viperior/python-project-template/tree/v0.7.0) (2022-02-25)
+
+### Improvements
+
+* Measure code coverage using `coverage` and require 100% code coverage to pass PR checks (closes [#9][i9])
+
+### Testing
+
+* Improve the design of the `test_flip_coins_function` to use parametrized test input data and run multiple times with a range of coin count inputs
+* Exclude pylint success/failure reporting from code coverage measurement
+
+[i9]: https://github.com/viperior/python-project-template/issues/9
+
 ## [0.6.0](https://github.com/viperior/python-project-template/tree/v0.6.0) (2022-02-25)
 
 ### Improvements

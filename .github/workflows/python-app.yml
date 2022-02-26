@@ -32,4 +32,5 @@ jobs:
         pytest -v -x -n auto
     - name: Test with pytest
       run: |
-        pytest -v
+        python -m coverage run -m pytest -v
+        coverage report -m --fail-under 100

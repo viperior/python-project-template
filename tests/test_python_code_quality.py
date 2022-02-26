@@ -17,7 +17,9 @@ def test_python_code_quality() -> None:
     pylint_error_free_search_phrase = "Your code has been rated at 10.00/10"
     pylint_errors_detected = pylint_error_free_search_phrase not in standard_output_data
 
-    if pylint_errors_detected:
+    if pylint_errors_detected:  # pragma: no cover
         logging.error("Pylint errors detected:\n%s", standard_output_data)
+    else:  # pragma: no cover
+        logging.debug("Pylint success output:\n%s", standard_output_data)
 
     assert pylint_error_free_search_phrase in standard_output_data
