@@ -4,12 +4,14 @@
 #
 #    pip-compile
 #
-astroid==2.9.0
+astroid==2.11.1
     # via pylint
 attrs==21.2.0
     # via pytest
 coverage==6.3.2
     # via -r requirements.in
+dill==0.3.4
+    # via pylint
 execnet==1.9.0
     # via pytest-xdist
 iniconfig==1.1.1
@@ -30,11 +32,11 @@ py==1.11.0
     # via
     #   pytest
     #   pytest-forked
-pylint==2.12.2
+pylint==2.13.0
     # via -r requirements.in
 pyparsing==3.0.6
     # via packaging
-pytest==7.0.1
+pytest==7.1.1
     # via
     #   -r requirements.in
     #   pytest-forked
@@ -43,14 +45,10 @@ pytest-forked==1.4.0
     # via pytest-xdist
 pytest-xdist==2.5.0
     # via -r requirements.in
-toml==0.10.2
-    # via pylint
 tomli==2.0.1
-    # via pytest
-typing-extensions==4.1.1
     # via
-    #   astroid
     #   pylint
+    #   pytest
 wrapt==1.13.3
     # via astroid
 
