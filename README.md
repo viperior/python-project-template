@@ -2,7 +2,7 @@
 
 This is a template for Python projects that provides a starting structure and a set of universally useful CI/CD configurations.
 
-![build](https://github.com/viperior/python-project-template/actions/workflows/python-app.yml/badge.svg)
+![build](https://github.com/viperior/python-project-template/actions/workflows/build.yml/badge.svg)
 
 ## What is this for?
 
