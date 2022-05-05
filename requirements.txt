@@ -4,7 +4,7 @@
 #
 #    pip-compile
 #
-astroid==2.11.1
+astroid==2.11.3
     # via pylint
 attrs==21.2.0
     # via pytest
@@ -32,11 +32,11 @@ py==1.11.0
     # via
     #   pytest
     #   pytest-forked
-pylint==2.13.0
+pylint==2.13.8
     # via -r requirements.in
 pyparsing==3.0.6
     # via packaging
-pytest==7.1.1
+pytest==7.1.2
     # via
     #   -r requirements.in
     #   pytest-forked
