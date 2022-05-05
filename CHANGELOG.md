@@ -6,6 +6,10 @@
 
 * Configure the `setuptools` build tool by creating the required metadata files
 
+### Improvements
+
+* Move pylint usage from the pytest test suite to a GitHub Actions workflow
+
 ## [0.7.0](https://github.com/viperior/python-project-template/tree/v0.7.0) (2022-02-26)
 
 ### Improvements
