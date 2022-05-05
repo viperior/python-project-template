@@ -9,6 +9,7 @@
 ### Improvements
 
 * Move pylint usage from the pytest test suite to a GitHub Actions workflow
+* Document universally important project aspects in readme
 
 ## [0.7.0](https://github.com/viperior/python-project-template/tree/v0.7.0) (2022-02-26)
 
