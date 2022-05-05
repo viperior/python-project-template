@@ -4,10 +4,8 @@
 
 ### New features
 
-* Configure the `setuptools` build tool by creating the required metadata files (closes [#21][i21])
+* Configure the `setuptools` build tool by creating the required metadata files
 * Modify the GitHub Actions workflow to build and install the project
-
-[i21]: https://github.com/viperior/python-project-template/issues/21
 
 ## [0.7.0](https://github.com/viperior/python-project-template/tree/v0.7.0) (2022-02-26)
 
