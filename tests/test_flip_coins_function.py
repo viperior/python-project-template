@@ -1,7 +1,5 @@
 """Example test case"""
 
-import pylint
-
 import logging
 
 import pytest
