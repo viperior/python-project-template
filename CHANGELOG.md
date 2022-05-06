@@ -4,6 +4,12 @@
 
 ### New features
 
+### Improvements
+
+## [1.0.0](https://github.com/viperior/python-project-template/tree/v1.0.0) (2022-05-06)
+
+### New features
+
 * Configure the `setuptools` build tool by creating the required metadata files
 
 ### Improvements
