@@ -4,11 +4,22 @@
 
 ### New features
 
+### Improvements
+
+## [1.0.0](https://github.com/viperior/python-project-template/tree/v1.0.0) (2022-05-06)
+
+### New features
+
 * Configure the `setuptools` build tool by creating the required metadata files
 
 ### Improvements
 
 * Move pylint usage from the pytest test suite to a GitHub Actions workflow
+* Document universally important project aspects in readme (closes [#13][i13])
+* Update reference to build.yaml file in badge URL (closes [#38][i38])
+
+[i13]: https://github.com/viperior/python-project-template/issues/13
+[i38]: https://github.com/viperior/python-project-template/issues/38
 
 ## [0.7.0](https://github.com/viperior/python-project-template/tree/v0.7.0) (2022-02-26)
 
