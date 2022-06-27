@@ -8,9 +8,14 @@
 
 ## [1.1.0](https://github.com/viperior/python-project-template/tree/v1.1.0) (2022-06-27)
 
+### Issues fixed
+
+- Resolve the pylint import error encountered during the GitHub Action workflow execution (closes [#58](https://github.com/viperior/python-project-template/issues/58))
+
 ### Improvements
 
 - Move the tests related to the example module into example/tests (closes [#36](https://github.com/viperior/python-project-template/issues/36))
+- Simplify the import statement in the coin flip test case
 - Ignore `.venv` directory when linting with flake8 (closes [#53](https://github.com/viperior/python-project-template/issues/53))
 - Update the required Python version in `setup.cfg` to 3.10 (closes [#56](https://github.com/viperior/python-project-template/issues/56))
 - Dependency updates
