@@ -19,6 +19,7 @@
 ### Improvements
 
 - Move the tests related to the example module into example/tests (closes [#36](https://github.com/viperior/python-project-template/issues/36))
+- Improve the project structure documentation
 - Rename the `build` workflow to `test` (closes [#52](https://github.com/viperior/python-project-template/issues/52))
 - Simplify the import statement in the coin flip test case
 - Ignore `.venv` directory when linting with flake8 (closes [#53](https://github.com/viperior/python-project-template/issues/53))
