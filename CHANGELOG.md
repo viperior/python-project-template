@@ -6,6 +6,15 @@
 
 ### Improvements
 
+## [1.1.0](https://github.com/viperior/python-project-template/tree/v1.1.0) (2022-06-27)
+
+### Improvements
+
+- Move the tests related to the example module into example/tests (closes [#36](https://github.com/viperior/python-project-template/issues/36))
+- Ignore `.venv` directory when linting with flake8 (closes [#53](https://github.com/viperior/python-project-template/issues/53))
+- Update the required Python version in `setup.cfg` to 3.10 (closes [#56](https://github.com/viperior/python-project-template/issues/56))
+- Dependency updates
+
 ## [1.0.0](https://github.com/viperior/python-project-template/tree/v1.0.0) (2022-05-06)
 
 ### New features
