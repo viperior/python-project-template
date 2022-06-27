@@ -38,9 +38,14 @@ python -m pytest
 ## Project structure
 
 ``` text
-project_root
-├───games_of_chance
-└───tests
+mainpackage/
+    subpackage/
+        __init__.py
+        samplemodule.py
+        tests/
+            __init__.py
+            test_one.py
+            test_two.py
 ```
 
 ## Resources
