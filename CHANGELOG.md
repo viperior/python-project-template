@@ -23,7 +23,6 @@
 - Rename the `build` workflow to `test` (closes [#52](https://github.com/viperior/python-project-template/issues/52))
 - Simplify the import statement in the coin flip test case
 - Ignore `.venv` directory when linting with flake8 (closes [#53](https://github.com/viperior/python-project-template/issues/53))
-- Update the required Python version in `setup.cfg` to 3.10 (closes [#56](https://github.com/viperior/python-project-template/issues/56))
 - Dependency updates
 
 ## [1.0.0](https://github.com/viperior/python-project-template/tree/v1.0.0) (2022-05-06)
