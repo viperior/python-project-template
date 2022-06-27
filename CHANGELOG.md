@@ -8,6 +8,10 @@
 
 ## [1.1.0](https://github.com/viperior/python-project-template/tree/v1.1.0) (2022-06-27)
 
+### New features
+
+- Configure dependabot to update GitHub Actions (closes [#64](https://github.com/viperior/python-project-template/issues/64))
+
 ### Issues fixed
 
 - Resolve the pylint import error encountered during the GitHub Action workflow execution (closes [#58](https://github.com/viperior/python-project-template/issues/58))
