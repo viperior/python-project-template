@@ -6,6 +6,8 @@
 
 ### Improvements
 
+- Limit code line length to 80 characters (closes [#73](https://github.com/viperior/python-project-template/issues/73))
+
 ## [1.1.0](https://github.com/viperior/python-project-template/tree/v1.1.0) (2022-06-27)
 
 ### New features
