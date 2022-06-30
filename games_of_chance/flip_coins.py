@@ -5,24 +5,23 @@ import random
 
 
 def flip_coins(coins_to_flip: int, chosen_side: str) -> dict:
-    """Flip n coins and tells the user if their chosen side, heads or tails, won overall
+    """Flip n coins and reports to the user whether their chosen side, heads or
+    tails, won overall.
 
-    # Parameters:
-
+    Attributes:
     coins_to_flip (int): The number of coins to flip
     chosen_side (str): The coin face chosen by the user to win
 
-    # Returns:
-
+    Returns:
     dict: the result of the coin flip(s)
 
-    # Example call:
+    Example call:
 
     ``` python
     flip_data = flip_coins(coins_to_flip=10, chosen_side="tails")
     ```
 
-    # Example output:
+    Example output:
 
     ``` python
     {
