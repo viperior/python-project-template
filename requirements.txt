@@ -32,7 +32,7 @@ py==1.11.0
     # via
     #   pytest
     #   pytest-forked
-pylint==2.14.4
+pylint==2.14.5
     # via -r requirements.in
 pyparsing==3.0.6
     # via packaging
