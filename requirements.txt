@@ -12,8 +12,6 @@ coverage==6.5.0
     # via -r requirements.in
 dill==0.3.4
     # via pylint
-exceptiongroup==1.0.0rc9
-    # via pytest
 execnet==1.9.0
     # via pytest-xdist
 iniconfig==1.1.1
@@ -30,8 +28,6 @@ platformdirs==2.4.0
     # via pylint
 pluggy==1.0.0
     # via pytest
-py==1.11.0
-    # via pytest-forked
 pylint==2.14.5
     # via -r requirements.in
 pyparsing==3.0.6
@@ -39,16 +35,9 @@ pyparsing==3.0.6
 pytest==7.2.0
     # via
     #   -r requirements.in
-    #   pytest-forked
     #   pytest-xdist
-pytest-forked==1.4.0
-    # via pytest-xdist
-pytest-xdist==2.5.0
+pytest-xdist==3.0.2
     # via -r requirements.in
-tomli==2.0.1
-    # via
-    #   pylint
-    #   pytest
 tomlkit==0.11.0
     # via pylint
 wrapt==1.13.3
