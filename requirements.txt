@@ -32,7 +32,7 @@ pylint==2.14.5
     # via -r requirements.in
 pyparsing==3.0.6
     # via packaging
-pytest==7.2.0
+pytest==7.2.1
     # via
     #   -r requirements.in
     #   pytest-xdist
