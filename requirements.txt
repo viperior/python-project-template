@@ -4,13 +4,13 @@
 #
 #    pip-compile
 #
-astroid==2.11.6
+astroid==2.13.3
     # via pylint
 attrs==21.2.0
     # via pytest
 coverage==6.5.0
     # via -r requirements.in
-dill==0.3.4
+dill==0.3.6
     # via pylint
 execnet==1.9.0
     # via pytest-xdist
@@ -28,7 +28,7 @@ platformdirs==2.4.0
     # via pylint
 pluggy==1.0.0
     # via pytest
-pylint==2.14.5
+pylint==2.15.10
     # via -r requirements.in
 pyparsing==3.0.6
     # via packaging
@@ -40,8 +40,5 @@ pytest-xdist==3.0.2
     # via -r requirements.in
 tomlkit==0.11.0
     # via pylint
-wrapt==1.13.3
+wrapt==1.14.1
     # via astroid
-
-# The following packages are considered to be unsafe in a requirements file:
-# setuptools
