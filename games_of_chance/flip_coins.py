@@ -3,6 +3,8 @@
 import logging
 import random
 
+import pandas
+
 
 def flip_coins(coins_to_flip: int, chosen_side: str) -> dict:
     """Flip n coins and reports to the user whether their chosen side, heads or
@@ -78,4 +80,7 @@ def flip_coins(coins_to_flip: int, chosen_side: str) -> dict:
         "tails_count": flip_data[1]
     }
 
-    return coin_flip_result
+    # Convert result data to a pandas dataframe
+    df = pandas.DataFrame.from_dict(coin_flip_result)
+
+    return df
