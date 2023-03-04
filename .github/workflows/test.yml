@@ -31,7 +31,7 @@ jobs:
         flake8 . --count --max-complexity=10 --statistics
     - name: Lint with pylint
       run: |
-        python -m pylint games_of_chance/
+        python -m pylint src/
     - name: Test with pytest
       run: |
         python -m coverage run -m pytest -v
