@@ -4,7 +4,7 @@ import logging
 
 import pytest
 
-import games_of_chance.flip_coins
+import src.flip_coins
 
 
 @pytest.mark.parametrize(
@@ -21,7 +21,7 @@ def test_foo_function(coin_count: int) -> None:
     None
     """
     try:
-        coin_flip_result = games_of_chance.flip_coins.flip_coins(
+        coin_flip_result = src.flip_coins.flip_coins(
             coins_to_flip=coin_count,
             chosen_side="heads"
         )
