@@ -89,7 +89,10 @@ def flip_coins(coin_flip_count: int, chosen_side: str) -> dict:
     }
     """
     # Validate input parameters
-    assert coin_flip_count > 0
+    if not isinstance(coin_flip_count, int):
+        raise TypeError('The number of coins must be an integer')
+    if coin_flip_count < 1:
+        raise ValueError('The number of coins must be an positive, non-zero integer')
 
     # Perform the coin flips
     flip_dataframes = []  # List of dataframes from single flips
