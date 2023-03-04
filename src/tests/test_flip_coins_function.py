@@ -11,7 +11,7 @@ import src.flip_coins
     "coin_flip_count",
     list(range(11)) + list(range(10, 200, 10)) + [1, 2] * 30
 )
-def test_foo_function(coin_flip_count: int) -> None:
+def test_multiple_coin_flips(coin_flip_count: int) -> None:
     """Example test case
 
     Parameters:
