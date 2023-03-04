@@ -20,7 +20,7 @@ def flip_coin(chosen_side: str) -> dict:
         "chosen_side": "tails",
         "result_side": "heads",
         "outcome": "lost",
-        "coins_flipped": 1,
+        "coin_flip_count": 1,
         "heads_count": 1,
         "tails_count": 0,
     }
@@ -34,10 +34,14 @@ def flip_coin(chosen_side: str) -> dict:
         raise ValueError(f"The value for chosen_side provided ({chosen_side}) is not an accepted value: heads, tails")
     # Perform the single coin flip
     flip_result = ['heads', 'tails'][random.randrange(0, 2)]
+    win_count = 0
+    loss_count = 0
     if flip_result == chosen_side:
         outcome = "won"
+        win_count += 1
     else:
         outcome = "lost"
+        loss_count += 1
     heads_count = 0
     tails_count = 0
     if flip_result == "heads":
@@ -48,7 +52,7 @@ def flip_coin(chosen_side: str) -> dict:
         "chosen_side": chosen_side,
         "result_side": flip_result,
         "outcome": outcome,
-        "coins_flipped": 1,
+        "coin_flip_count": 1,
         "heads_count": heads_count,
         "tails_count": tails_count,
     }
@@ -56,7 +60,7 @@ def flip_coin(chosen_side: str) -> dict:
     return df
 
 
-def flip_coins(coins_to_flip: int, chosen_side: str) -> dict:
+def flip_coins(coin_flip_count: int, chosen_side: str) -> dict:
     """Flip n coins and reports to the user whether their chosen side, heads or
     tails, won overall.
 
@@ -72,58 +76,52 @@ def flip_coins(coins_to_flip: int, chosen_side: str) -> dict:
 
     Example output:
     {
-        "chosen_side": "tails"
+        "chosen_side": "tails",
+        "winning_side": "tails",
         "outcome": "won",
-        "coins_flipped": 10,
+        "coin_flip_count": 10,
         "heads_count": 4,
-        "tails_count": 6
+        "tails_count": 6,
     }
     """
     # Validate input parameters
-    assert coins_to_flip > 0
+    assert coin_flip_count > 0
 
     # Perform the coin flips
-    flip_data = [
-        0,  # heads
-        0   # tails
-    ]
-    flip_pip_chart = ""
-    flip_pip_chart_map = ["H", "T"]
-
-    for index in range(coins_to_flip):
-        current_flip = random.randrange(0, 2)
-        logging.debug("Flipping coin #%d; result = %d", index, current_flip)
-        flip_data[current_flip] += 1
-        flip_pip_chart += flip_pip_chart_map[current_flip]
-
-    assert (flip_data[0] + flip_data[1]) == coins_to_flip
-    logging.debug(flip_pip_chart)
+    flip_dataframes = []  # List of dataframes from single flips
+    for index in range(coin_flip_count):
+        current_flip = flip_coin(chosen_side)
+        logging.debug("Flipped coin #%d; result = \n%s", index, current_flip)
+        flip_dataframes.append(current_flip)
+    flip_data = pandas.concat(flip_dataframes)
 
     # Determine winning face
-    if flip_data[0] > flip_data[1]:
+    if sum(flip_data["heads_count"]) > sum(flip_data["tails_count"]):
         winning_side = "heads"
-    elif flip_data[1] > flip_data[0]:
+    elif sum(flip_data["heads_count"]) < sum(flip_data["tails_count"]):
         winning_side = "tails"
     else:
         winning_side = "tie"
 
-    # Determine overall result
+    # Determine overall outcome
     if chosen_side == winning_side:
-        overall_result = "won"
+        outcome = "won"
     elif winning_side == "tie":
-        overall_result = "tie"
+        outcome = "tie"
     else:
-        overall_result = "lost"
+        outcome = "lost"
 
     # Return the result
-    coin_flip_result = {
-        "result": overall_result,
-        "coins_flipped": flip_data[0] + flip_data[1],
-        "heads_count": flip_data[0],
-        "tails_count": flip_data[1]
+    result = {
+        "chosen_side": chosen_side,
+        "winning_side": winning_side,
+        "outcome": outcome,
+        "coin_flip_count": sum(flip_data["coin_flip_count"]),
+        "heads_count": sum(flip_data["heads_count"]),
+        "tails_count": sum(flip_data["tails_count"]),
     }
 
     # Convert result data to a pandas dataframe
-    df = pandas.DataFrame.from_dict(coin_flip_result)
+    df = pandas.DataFrame(result, index=[0])
 
     return df
