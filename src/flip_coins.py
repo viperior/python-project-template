@@ -27,7 +27,7 @@ def flip_coin(chosen_side: str) -> pandas.DataFrame:
     """
     # Validate chosen side
     if not isinstance(chosen_side, str):
-        raise ValueError("chosen_side must be a string")
+        raise TypeError("chosen_side must be a string")
     if len(chosen_side) < 1:
         raise ValueError("chosen_side cannot be an empty string")
     if chosen_side not in ["heads", "tails"]:
