@@ -28,6 +28,15 @@ def test_multiple_coin_flips(coin_flip_count: int) -> None:
     assert coin_flip_result["outcome"][0] in ["won", "lost", "tie"]
 
 
+def test_multiple_coin_flip_invalid_input_type() -> None:
+    """Test the exception handling of flip_coins when given an invalid input type"""
+    with pytest.raises(TypeError):
+        src.flip_coins.flip_coins(
+            coin_flip_count="twenty",
+            chosen_side="tails",
+        )
+
+
 def test_multiple_coin_flip_zero_times() -> None:
     """Test the exception handling of flip_coins when asked to flip 0 coins"""
     with pytest.raises(ValueError):
