@@ -1,7 +1,5 @@
 """Test the single coin flip functionality from flip_coins"""
 
-import pytest
-
 import src.flip_coins
 
 
