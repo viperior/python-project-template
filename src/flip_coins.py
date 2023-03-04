@@ -80,8 +80,6 @@ def flip_coins(coins_to_flip: int, chosen_side: str) -> dict:
     """
     # Validate input parameters
     assert coins_to_flip > 0
-    assert len(chosen_side) > 0
-    assert chosen_side in ["heads", "tails"]
 
     # Perform the coin flips
     flip_data = [
