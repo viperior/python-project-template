@@ -30,7 +30,7 @@ def test_multiple_coin_flips(coin_flip_count: int) -> None:
 
 def test_multiple_coin_flip_zero_times() -> None:
     """Test the exception handling of flip_coins when asked to flip 0 coins"""
-    with pytest.raises(AssertionError):
+    with pytest.raises(ValueError):
         src.flip_coins.flip_coins(
             coin_flip_count=0,
             chosen_side="tails"
