@@ -11,7 +11,7 @@ def test_single_coin_flip() -> None:
     assert result["chosen_side"][0] == "heads"
     assert result["result_side"][0] in ["heads", "tails"]
     assert result["outcome"][0] in ["won", "lost"]
-    assert result["coins_flipped"][0] == 1
+    assert result["coin_flip_count"][0] == 1
     assert 0 <= result["heads_count"][0] <= 1
     assert 0 <= result["tails_count"][0] <= 1
     assert result["heads_count"][0] != result["tails_count"][0]
