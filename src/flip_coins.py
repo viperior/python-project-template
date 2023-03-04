@@ -52,7 +52,8 @@ def flip_coin(chosen_side: str) -> dict:
         "heads_count": heads_count,
         "tails_count": tails_count,
     }
-    return result
+    df = pandas.DataFrame(result, index=[0])
+    return df
 
 
 def flip_coins(coins_to_flip: int, chosen_side: str) -> dict:
