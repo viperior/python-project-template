@@ -6,6 +6,55 @@ import random
 import pandas
 
 
+def flip_coin(chosen_side: str) -> dict:
+    """Return the result of a single coin flip given the chosen side
+
+    :param str chosen_side: The player's chosen side ("heads", "tails")
+    :return: the result of the single coin flip
+    :rtype: dict
+    :raises ValueError: if the chosen_side is empty or not "heads" or "tails"
+    :raises TypeError: if the chosen_side is not a string
+
+    Example output:
+    {
+        "chosen_side": "tails",
+        "result_side": "heads",
+        "outcome": "lost",
+        "coins_flipped": 1,
+        "heads_count": 1,
+        "tails_count": 0,
+    }
+    """
+    # Validate chosen side
+    if not isinstance(chosen_side, str):
+        raise ValueError("chosen_side must be a string")
+    if len(chosen_side) < 1:
+        raise ValueError("chosen_side cannot be an empty string")
+    if chosen_side not in ["heads", "tails"]:
+        raise ValueError(f"The value for chosen_side provided ({chosen_side}) is not an accepted value: heads, tails")
+    # Perform the single coin flip
+    flip_result = ['heads', 'tails'][random.randrange(0, 2)]
+    if flip_result == chosen_side:
+        outcome = "won"
+    else:
+        outcome = "lost"
+    heads_count = 0
+    tails_count = 0
+    if flip_result == "heads":
+        heads_count += 1
+    else:
+        tails_count += 1
+    result = {
+        "chosen_side": chosen_side,
+        "result_side": flip_result,
+        "outcome": outcome,
+        "coins_flipped": 1,
+        "heads_count": heads_count,
+        "tails_count": tails_count,
+    }
+    return result
+
+
 def flip_coins(coins_to_flip: int, chosen_side: str) -> dict:
     """Flip n coins and reports to the user whether their chosen side, heads or
     tails, won overall.
