@@ -5,7 +5,7 @@ import src.flip_coins
 
 def test_single_coin_flip() -> None:
     """Test flipping a single coin"""
-    result = src.flip_coins.flip_coin("heads").to_dict()
+    result = src.flip_coins.flip_coin("heads")
     assert result["chosen_side"][0] == "heads"
     assert result["result_side"][0] in ["heads", "tails"]
     assert result["outcome"][0] in ["won", "lost"]
