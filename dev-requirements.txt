@@ -12,8 +12,6 @@ coverage==7.2.1
     # via -r dev-requirements.in
 dill==0.3.6
     # via pylint
-exceptiongroup==1.1.0
-    # via pytest
 flake8==6.0.0
     # via -r dev-requirements.in
 iniconfig==2.0.0
@@ -38,15 +36,9 @@ pyflakes==3.0.1
     # via flake8
 pylint==2.16.2
     # via -r dev-requirements.in
-pytest==7.2.1
+pytest==7.2.2
     # via -r dev-requirements.in
-tomli==2.0.1
-    # via
-    #   pylint
-    #   pytest
 tomlkit==0.11.6
     # via pylint
-typing-extensions==4.5.0
-    # via astroid
 wrapt==1.15.0
     # via astroid
