@@ -66,22 +66,17 @@ def flip_coins(coins_to_flip: int, chosen_side: str) -> dict:
     Returns:
     dict: the result of the coin flip(s)
 
-    Example call:
-
-    ``` python
+    Example usage:
     flip_data = flip_coins(coins_to_flip=10, chosen_side="tails")
-    ```
 
     Example output:
-
-    ``` python
     {
-        "result": "won",
+        "chosen_side": "tails"
+        "outcome": "won",
         "coins_flipped": 10,
         "heads_count": 4,
         "tails_count": 6
     }
-    ```
     """
     # Validate input parameters
     assert coins_to_flip > 0
