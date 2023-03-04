@@ -6,12 +6,12 @@ import random
 import pandas
 
 
-def flip_coin(chosen_side: str) -> dict:
+def flip_coin(chosen_side: str) -> pandas.DataFrame:
     """Return the result of a single coin flip given the chosen side
 
     :param str chosen_side: The player's chosen side ("heads", "tails")
-    :return: the result of the single coin flip
-    :rtype: dict
+    :return: the result of the single coin flip in a dataframe
+    :rtype: pandas.DataFrame
     :raises ValueError: if the chosen_side is empty or not "heads" or "tails"
     :raises TypeError: if the chosen_side is not a string
 
