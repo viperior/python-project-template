@@ -31,7 +31,11 @@ def flip_coin(chosen_side: str) -> dict:
     if len(chosen_side) < 1:
         raise ValueError("chosen_side cannot be an empty string")
     if chosen_side not in ["heads", "tails"]:
-        raise ValueError(f"The value for chosen_side provided ({chosen_side}) is not an accepted value: heads, tails")
+        error_message = (
+            f"The value for chosen_side provided ({chosen_side}) "
+            f"is not an accepted value: heads, tails"
+        )
+        raise ValueError(error_message)
     # Perform the single coin flip
     flip_result = ['heads', 'tails'][random.randrange(0, 2)]
     win_count = 0
