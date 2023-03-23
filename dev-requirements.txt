@@ -34,7 +34,7 @@ pycodestyle==2.10.0
     # via flake8
 pyflakes==3.0.1
     # via flake8
-pylint==2.17.0
+pylint==2.17.1
     # via -r dev-requirements.in
 pytest==7.2.2
     # via -r dev-requirements.in
