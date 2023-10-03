@@ -4,7 +4,7 @@
 #
 #    pip-compile --resolver=backtracking dev-requirements.in
 #
-astroid==2.15.4
+astroid==3.0.0
     # via pylint
 coverage==7.2.1
     # via -r dev-requirements.in
@@ -16,8 +16,6 @@ iniconfig==2.0.0
     # via pytest
 isort==5.12.0
     # via pylint
-lazy-object-proxy==1.9.0
-    # via astroid
 mccabe==0.7.0
     # via
     #   flake8
@@ -32,11 +30,9 @@ pycodestyle==2.10.0
     # via flake8
 pyflakes==3.0.1
     # via flake8
-pylint==2.17.4
+pylint==3.0.0
     # via -r dev-requirements.in
 pytest==7.4.0
     # via -r dev-requirements.in
 tomlkit==0.11.6
     # via pylint
-wrapt==1.15.0
-    # via astroid
