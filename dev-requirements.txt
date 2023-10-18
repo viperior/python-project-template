@@ -10,7 +10,7 @@ coverage==7.3.2
     # via -r dev-requirements.in
 dill==0.3.6
     # via pylint
-flake8==6.0.0
+flake8==6.1.0
     # via -r dev-requirements.in
 iniconfig==2.0.0
     # via pytest
@@ -26,9 +26,9 @@ platformdirs==3.0.0
     # via pylint
 pluggy==1.0.0
     # via pytest
-pycodestyle==2.10.0
+pycodestyle==2.11.1
     # via flake8
-pyflakes==3.0.1
+pyflakes==3.1.0
     # via flake8
 pylint==3.0.1
     # via -r dev-requirements.in
