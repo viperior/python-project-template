@@ -6,7 +6,7 @@
 #
 astroid==3.0.1
     # via pylint
-coverage==7.4.0
+coverage==7.4.2
     # via -r dev-requirements.in
 dill==0.3.6
     # via pylint
