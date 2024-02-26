@@ -4,7 +4,7 @@
 #
 #    pip-compile --resolver=backtracking dev-requirements.in
 #
-astroid==3.0.1
+astroid==3.1.0
     # via pylint
 coverage==7.4.0
     # via -r dev-requirements.in
@@ -32,7 +32,7 @@ pycodestyle==2.11.1
     # via flake8
 pyflakes==3.1.0
     # via flake8
-pylint==3.0.3
+pylint==3.1.0
     # via -r dev-requirements.in
 pytest==7.4.3
     # via -r dev-requirements.in
